@@ -1,45 +1,31 @@
-/* resources/css/doctor.css */
+/* doctor.css */
 
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Jarak antara baris */
-    align-items: stretch; /* Memaksa tinggi kolom pada baris yang sama menjadi sama */
-}
-
-.row {
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px; /* Jarak antara kolom */
-    margin-bottom: 25px;
-}
-
-.col {
-    flex: 1;
-    min-width: 0; /* Ensure no minimum width */
-    max-width: calc(25% - 10px); /* 4 columns with gaps */
+body {
+    background-color: #f8f9fa; /* Warna latar belakang */
 }
 
 .doctor-card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    border: 1px solid #ddd; /* Warna border dan sedikit lebih tipis */
+    border-radius: 8px;
+    padding: 15px; /* Padding sedikit dikurangi */
+    margin-bottom: 20px;
+    background-color: #fff; /* Warna latar belakang */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow ringan */
 }
 
-.doctor-title {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.doctor-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Jarak antara gambar dan teks */
 }
 
-.doctor-specialty {
-    font-weight: bold;
-    color: #007bff;
+.doctor-card h3 {
+    font-size: 1.5rem; /* Ukuran font judul sedikit lebih besar */
+    margin-bottom: 10px; /* Jarak antara judul dan teks lainnya */
+}
+
+.doctor-card p {
+    font-size: 0.9rem; /* Ukuran font teks sedikit lebih kecil */
+    margin-bottom: 5px; /* Jarak antara baris teks */
 }

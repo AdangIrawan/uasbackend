@@ -19,6 +19,6 @@ class Booking extends Model
         'email',
         'phone',
         'date',
-        'ticket_type',
+        'tenaga_kerja',
     ];
 }

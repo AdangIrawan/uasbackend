@@ -1,0 +1,92 @@
+/* profile.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-section p,
+.biography-section p,
+.qualifications-section p,
+.contact-section p,
+.edit-profile-section form label,
+.edit-profile-section form input,
+.edit-profile-section form textarea {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+strong {
+    color: #000;
+}
+
+.biography-section {
+    margin-top: 40px;
+}
+
+.qualifications-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.contact-section {
+    margin-top: 40px;
+}
+
+.contact-section form {
+    margin-top: 20px;
+}
+
+.contact-section button,
+.edit-profile-section form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover,
+.edit-profile-section form button:hover {
+    background-color: #0056b3;
+}
+
+.edit-profile-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-profile-section form input,
+.edit-profile-section form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}

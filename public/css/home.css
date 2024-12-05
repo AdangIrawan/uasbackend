@@ -8,38 +8,6 @@ header {
     background-color: #f4f4f4;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-}
-
-nav .logo img {
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-nav ul li a:hover {
-    background-color: #575757;
-}
-
 main {
     padding: 20px;
 }
@@ -50,15 +18,6 @@ section {
 
 h2 {
     color: #333;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
 }
 
 footer {
@@ -82,7 +41,8 @@ form label {
     margin: 10px 0 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -107,5 +67,3 @@ section.center {
     margin: auto;
     max-width: 600px;
 }
-
-

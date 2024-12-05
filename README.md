@@ -1,3 +1,47 @@
+## Tutorial
+TUTORIAL LOGIN/REGISTER UNTUK USER
+
+1.	Ketika user masuk ke page register/login, maka user terlebih dulu melakukan register untuk bisa login ke Website Klinik Hartono Medica.
+2.	Setelah masuk ke page register maka user akan mengisi username, email dan password lalu klik button register.
+3.	Setelah itu user akan masuk kembali ke page login untuk memasukan akun yang sudah didaftarkan.
+4.	Setelah mengisi data akun, user akan klik button login dan user akan masuk ke tampilan home dari website Hartono Medica.
+
+
+
+TUTORIAL LOGIN/REGISTER UNTUK ADMIN
+
+1.	Pertama buka pgAdmin, lalu masuk ke table admin setalah itu menambahkan akun dengan manual.
+2.	Setelah menambahkan dengan akun manual, buka localhost:8000/admin/login maka akan masuk dengan otomatis ke admin login.
+3.	Setelah itu masukkan akun yang sudah ditambahkan manual melaui pgAdmin.
+4.	Jika ter redirect ke /login saat button di klik, anda tinggal mengakses localhost:8000/admin/dashboard. Itu dikarenakan session awalnya adalah user.
+5.	Setelah itu akan masuk page admin dashboard.
+	
+akun admin yang sudah terdaftar di tabel admin postgres
+email : admin@gmail.com
+password : 12341234
+
+
+Mailer
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=adangirawan00@gmail.com
+MAIL_PASSWORD=ldtmzimopkcorpes
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="adangirawan00@gmail.com"
+MAIL_FROM_NAME="${APP_NAME}"
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,3 +108,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+

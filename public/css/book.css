@@ -49,51 +49,27 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #555;
 }
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
+.alert-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Pastikan lebih tinggi dari elemen lain */
+    display: none; /* Mulai tersembunyi */
 }
 
-footer p {
-    font-size: 0.8em;
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-}
-
-nav .logo img {
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-nav ul li a:hover {
-    background-color: #575757;
-}
-
-ul li {
-    margin-bottom: 10px;
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
 }

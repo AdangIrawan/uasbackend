@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.medicine-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.medicine-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.medicine-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.medicine-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}

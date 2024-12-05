@@ -19,11 +19,24 @@ class AuthenticatedSessionController extends Controller
 
     public function store(LoginRequest $request): RedirectResponse
     {
-        $request->authenticate();
+        $credentials = $request->only('email', 'password');
+
+        $admin = \App\Models\Admin::where('email', $credentials['email'])->first();
+
+        if (!$admin) {
+            return redirect()->route('admin.login')
+                ->withErrors(['email' => 'Email tidak terdaftar'])
+                ->withInput($request->only('email'));
+        }
+
+        if (!Auth::guard('admin')->attempt($credentials, $request->filled('remember'))) {
+            return redirect()->route('admin.login')
+                ->withErrors(['password' => 'Password salah'])
+                ->withInput($request->only('email'));
+        }
 
         $request->session()->regenerate();
-
-        return redirect()->intended(RouteServiceProvider::ADMIN_DASHBOARD);
+        return redirect()->intended('/admin/dashboard');
     }
 
     public function destroy(Request $request): RedirectResponse

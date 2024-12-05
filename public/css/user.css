@@ -1,0 +1,98 @@
+/* Mengimpor font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General body styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the user profile */
+.user-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the paragraphs */
+.user-container p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Strong element styling */
+.user-container p strong {
+    color: #007BFF;
+}
+
+/* Styling for the logout button */
+.user-container form button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Hover effect for the logout button */
+.user-container form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Flexbox styling for better layout */
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Additional styling for headings */
+.user-container h1 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.user-container h2 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Styling for input elements */
+.user-container form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.user-container form input:focus {
+    border-color: #007BFF;
+    outline: none;
+}

@@ -1,0 +1,13 @@
+.carousel {
+  max-width: 60%;
+  margin: auto;
+}
+.carousel-item img {
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  object-fit: cover;
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Add background to captions for better readability */
+  padding: 10px;
+}
