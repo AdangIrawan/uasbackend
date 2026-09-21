@@ -1,36 +1,30 @@
-## Tutorial
-TUTORIAL LOGIN/REGISTER UNTUK USER
+Hartono Medica is a web-based clinic management system designed to provide users with convenient access to healthcare services and information. The website allows patients to register and log in to their accounts, view available doctors, check doctor information, and make appointments according to their needs.
 
-1.	Ketika user masuk ke page register/login, maka user terlebih dulu melakukan register untuk bisa login ke Website Klinik Hartono Medica.
-2.	Setelah masuk ke page register maka user akan mengisi username, email dan password lalu klik button register.
-3.	Setelah itu user akan masuk kembali ke page login untuk memasukan akun yang sudah didaftarkan.
-4.	Setelah mengisi data akun, user akan klik button login dan user akan masuk ke tampilan home dari website Hartono Medica.
+The system also provides an admin dashboard for managing clinic data and services. Administrators can manage doctors, patient bookings, queues, medicines, and other clinic-related information through the admin panel.
+
+### USER LOGIN/REGISTRATION TUTORIAL
+
+1. When the user accesses the **Register/Login** page, the user must first register an account before being able to log in to the **Hartono Medica Clinic** website.
+2. On the **Register** page, the user must enter their **username, email, and password**, then click the **Register** button.
+3. After successfully registering, the user will be redirected to the **Login** page to enter the account credentials they have registered.
+4. After entering the account information, click the **Login** button. The user will then be redirected to the **Home** page of the Hartono Medica website.
+
+### ADMIN LOGIN/REGISTRATION TUTORIAL
+
+1. First, open **pgAdmin** and navigate to the **admin** table. Add an administrator account manually to the database.
+2. After adding the admin account, open `localhost:8000/admin/login` in the browser. This will display the **Admin Login** page.
+3. Enter the admin account credentials that were manually added through **pgAdmin**.
+4. If clicking the **Login** button redirects you to `/login`, access `localhost:8000/admin/dashboard` directly. This occurs because the initial session is recognized as a regular user session.
+5. You will then be redirected to the **Admin Dashboard**.
+
+### Registered Admin Account
+
+The following admin account is already registered in the PostgreSQL `admin` table:
+
+* **Email:** `admin@gmail.com`
+* **Password:** `12341234`
 
 
-
-TUTORIAL LOGIN/REGISTER UNTUK ADMIN
-
-1.	Pertama buka pgAdmin, lalu masuk ke table admin setalah itu menambahkan akun dengan manual.
-2.	Setelah menambahkan dengan akun manual, buka localhost:8000/admin/login maka akan masuk dengan otomatis ke admin login.
-3.	Setelah itu masukkan akun yang sudah ditambahkan manual melaui pgAdmin.
-4.	Jika ter redirect ke /login saat button di klik, anda tinggal mengakses localhost:8000/admin/dashboard. Itu dikarenakan session awalnya adalah user.
-5.	Setelah itu akan masuk page admin dashboard.
-	
-akun admin yang sudah terdaftar di tabel admin postgres
-email : admin@gmail.com
-password : 12341234
-
-
-Mailer
-
-MAIL_MAILER=smtp
-MAIL_HOST=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME=adangirawan00@gmail.com
-MAIL_PASSWORD=ldtmzimopkcorpes
-MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS="adangirawan00@gmail.com"
-MAIL_FROM_NAME="${APP_NAME}"
 
 
 
